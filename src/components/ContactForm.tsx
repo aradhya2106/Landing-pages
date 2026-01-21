@@ -65,15 +65,15 @@ const ContactForm = ({ isOpen, onClose }: ContactFormProps) => {
         animate={{ opacity: 1, scale: 1, y: 0 }}
         exit={{ opacity: 0, scale: 0.95, y: 20 }}
         transition={{ duration: 0.3 }}
-        className="fixed top-20 left-1/2 -translate-x-1/2 z-50 w-full max-w-md mx-4 max-h-[calc(100vh-8rem)] overflow-y-auto"
+        className="fixed inset-0 z-50 flex items-center justify-center px-4 py-8 md:py-0"
       >
-        <div className="glass-strong rounded-2xl p-8 backdrop-blur-xl m-4">
+        <div className="glass-strong rounded-2xl p-6 md:p-8 backdrop-blur-xl w-full max-w-md max-h-[90vh] overflow-y-auto">
           {/* Header */}
           <div className="flex items-center justify-between mb-6">
-            <h2 className="text-2xl font-bold">Contact Us</h2>
+            <h2 className="text-xl md:text-2xl font-bold">Contact Us</h2>
             <button
               onClick={onClose}
-              className="p-2 hover:bg-muted rounded-lg transition-colors"
+              className="p-2 hover:bg-muted rounded-lg transition-colors flex-shrink-0"
             >
               <X className="w-5 h-5" />
             </button>
