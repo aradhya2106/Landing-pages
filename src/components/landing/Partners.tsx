@@ -38,7 +38,7 @@ const Partners = () => {
           className="text-center mb-16"
         >
           <span className="text-muted-foreground text-sm mb-8 block">
-            Trusted by Industry Leaders
+             Trusted Partners
           </span>
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
             {partners.map((partner, index) => (
