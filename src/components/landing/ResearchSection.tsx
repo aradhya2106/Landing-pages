@@ -104,15 +104,6 @@ const ResearchSection = () => {
                 <p className="text-muted-foreground text-sm mb-6 leading-relaxed flex-grow">
                   {area.description}
                 </p>
-
-                {/* Link */}
-                <a
-                  href="#"
-                  className="inline-flex items-center gap-2 text-sm font-medium text-accent hover:text-accent/80 transition-colors group/link mt-auto"
-                >
-                  Read Paper
-                  <ArrowUpRight className="w-4 h-4 transition-transform group-hover/link:translate-x-1 group-hover/link:-translate-y-1" />
-                </a>
               </div>
             </motion.div>
           ))}

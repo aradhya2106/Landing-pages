@@ -45,7 +45,7 @@ const Navbar = () => {
                 </span>
               </div>
               <span className="font-bold text-xl hidden sm:block">
-                Y3
+                Y3 AI
               </span>
             </a>
 

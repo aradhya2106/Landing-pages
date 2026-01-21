@@ -1,32 +1,42 @@
 import { motion } from "framer-motion";
-import { Globe, Search, Cpu, ArrowUpRight } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Globe, Search, Cpu } from "lucide-react";
 
 const products = [
   {
     icon: Globe,
     title: "AI Agentic Browser + Edge Platform",
-    description: "Complete browsing and interaction infrastructure for agentic AI systems with built-in data collection and evaluation capabilities.",
+    description:
+      "Complete browsing and interaction infrastructure for agentic AI systems with built-in data collection and evaluation capabilities.",
     status: "Available",
-    features: ["Browsing + Interactions", "Data Collection", "Real-time Evaluation"],
-    gradient: "from-primary to-secondary"
+    features: [
+      "Browsing + Interactions",
+      "Data Collection",
+      "Real-time Evaluation",
+    ],
+    gradient: "from-primary to-secondary",
   },
   {
     icon: Search,
     title: "AI Meta Search",
-    description: "Enhanced search with relevance, safety, and task-completion metrics for more intelligent information retrieval.",
+    description:
+      "Enhanced search with relevance, safety, and task-completion metrics for more intelligent information retrieval.",
     status: "Coming Soon",
     features: ["Relevance Scoring", "Safety Metrics", "Task Completion"],
-    gradient: "from-secondary to-accent"
+    gradient: "from-secondary to-accent",
   },
   {
     icon: Cpu,
     title: "Agentic Operating System (AOS)",
-    description: "A unified stack to run, monitor, and evaluate agentic AI behavior across all your systems.",
+    description:
+      "A unified stack to run, monitor, and evaluate agentic AI behavior across all your systems.",
     status: "Beta",
-    features: ["Unified Monitoring", "Behavior Analysis", "Cross-system Evaluation"],
-    gradient: "from-accent to-primary"
-  }
+    features: [
+      "Unified Monitoring",
+      "Behavior Analysis",
+      "Cross-system Evaluation",
+    ],
+    gradient: "from-accent to-primary",
+  },
 ];
 
 const Products = () => {
@@ -108,15 +118,6 @@ const Products = () => {
                     </span>
                   ))}
                 </div>
-
-                {/* CTA */}
-                <Button
-                  variant="ghost"
-                  className="w-full justify-between group/btn hover:bg-primary/10"
-                >
-                  Learn More
-                  <ArrowUpRight className="w-4 h-4 transition-transform group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1" />
-                </Button>
               </div>
             </motion.div>
           ))}

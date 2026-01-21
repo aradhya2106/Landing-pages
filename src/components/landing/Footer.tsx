@@ -61,7 +61,7 @@ const Footer = () => {
                 <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
                   <span className="text-lg font-bold text-black">Y</span>
                 </div>
-                <span className="font-bold text-xl hidden sm:block">Y3</span>
+                <span className="font-bold text-xl hidden sm:block">Y3  AI</span>
               </a>
 
               <nav className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
@@ -98,7 +98,7 @@ const Footer = () => {
               </nav>
 
               <p className="text-sm text-muted-foreground">
-                © 2026 Y3. All rights reserved.
+                © 2026 Y3 AI. All rights reserved.
               </p>
             </div>
           </div>

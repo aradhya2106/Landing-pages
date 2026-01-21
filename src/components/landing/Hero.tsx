@@ -36,7 +36,7 @@ const Hero = () => {
           >
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-muted-foreground">
-              Next-Gen AI Infrastructure
+              The SuperIntelligence Labs
             </span>
           </motion.div>
 
