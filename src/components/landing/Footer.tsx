@@ -1,11 +1,8 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import ContactForm from "@/components/ContactForm";
 
 const Footer = () => {
-  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
 
   return (
     <>
@@ -40,14 +37,15 @@ const Footer = () => {
                   Get Started Today
                   <ArrowRight className="ml-2 w-5 h-5" />
                 </Button>
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className="border-border hover:bg-muted/50 px-8 py-6 text-lg"
-                  onClick={() => setIsContactFormOpen(true)}
-                >
-                  Contact Us
-                </Button>
+                <a href="mailto:Team@yachthree.com">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="border-border hover:bg-muted/50 px-8 py-6 text-lg"
+                  >
+                    Contact Us
+                  </Button>
+                </a>
               </div>
             </motion.div>
           </div>
@@ -58,10 +56,11 @@ const Footer = () => {
           <div className="container px-4 md:px-6">
             <div className="flex flex-col md:flex-row items-center justify-between gap-4">
               <a href="#" className="flex items-center gap-2">
-                <div className="w-10 h-10 rounded-xl bg-gradient-primary flex items-center justify-center">
-                  <span className="text-lg font-bold text-black">Y</span>
-                </div>
-                <span className="font-bold text-xl hidden sm:block">Y3  AI</span>
+                <img
+                  src="/logo.png"
+                  alt="H+AI logo"
+                  className="h-10 w-auto object-contain"
+                />
               </a>
 
               <nav className="flex flex-wrap justify-center gap-6 text-sm text-muted-foreground">
@@ -98,18 +97,13 @@ const Footer = () => {
               </nav>
 
               <p className="text-sm text-muted-foreground">
-                © 2026 Y3 AI. All rights reserved.
+                © 2026 H+AI. All rights reserved.
               </p>
             </div>
           </div>
         </div>
       </footer>
 
-      {/* Contact Form Modal */}
-      <ContactForm
-        isOpen={isContactFormOpen}
-        onClose={() => setIsContactFormOpen(false)}
-      />
     </>
   );
 };

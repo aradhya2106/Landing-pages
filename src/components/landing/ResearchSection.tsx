@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 const researchAreas = [
   {
     icon: Cpu,
-    title: "Agentic Operating System (AOS)",
+    title: "Human-Centric Intelligence",
     description:
-      "Research-driven system design for autonomous AI behavior monitoring and evaluation",
+      "Human-inspired agent architecture integrating memory, learning, and contextual awareness to enable persistent, adaptive, and self-evolving AI behavior.",
     tag: "Systems Research",
   },
   {

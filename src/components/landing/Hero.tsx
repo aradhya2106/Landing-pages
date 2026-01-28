@@ -2,9 +2,22 @@ import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
+const teamFrom = [
+  "Atari",
+  "Hyundai",
+  "Harvard",
+  "Stanford",
+  "Columbia",
+  "IIT",
+  "Apple",
+  "World Bank",
+  "EY",
+  "Goldman Sachs",
+];
+
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20 pb-16">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-glow opacity-50" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]" />
@@ -85,10 +98,35 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.9, duration: 0.8 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mt-8 leading-relaxed"
+            className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mt-6 leading-relaxed"
           >
             Measurable AI Gains. Safety-First. Human-Centered.
           </motion.p>
+
+          {/* Team with Experts from - first scroll */}
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1, duration: 0.6 }}
+            className="mt-10 md:mt-12"
+          >
+            <span className="text-muted-foreground text-sm mb-5 block">
+              Team with Experts from
+            </span>
+            <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 md:gap-5">
+              {teamFrom.map((org, index) => (
+                <motion.span
+                  key={org}
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 1.05 + index * 0.04, duration: 0.4 }}
+                  className="px-4 py-2 rounded-full glass text-sm font-medium text-foreground/70 hover:text-foreground hover:border-primary/30 transition-all cursor-default"
+                >
+                  {org}
+                </motion.span>
+              ))}
+            </div>
+          </motion.div>
         </motion.div>
 
         {/* Scroll Indicator */}
