@@ -84,13 +84,15 @@ const Hero = () => {
             transition={{ delay: 0.7, duration: 0.8 }}
             className="flex items-center justify-center"
           >
-            <Button
-              size="lg"
-              className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-semibold px-8 py-6 text-lg shadow-glow transition-all duration-300"
-            >
-              Get Started
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+            <a href="mailto:Team@yachthree.com">
+              <Button
+                size="lg"
+                className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-semibold px-8 py-6 text-lg shadow-glow transition-all duration-300"
+              >
+                Get Started
+                <ArrowRight className="ml-2 w-5 h-5" />
+              </Button>
+            </a>
           </motion.div>
 
           {/* Key Benefits */}

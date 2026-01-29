@@ -30,20 +30,13 @@ const Footer = () => {
                 can accelerate your AI development.
               </p>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-                <Button
-                  size="lg"
-                  className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-semibold px-8 py-6 text-lg shadow-glow"
-                >
-                  Get Started Today
-                  <ArrowRight className="ml-2 w-5 h-5" />
-                </Button>
                 <a href="mailto:Team@yachthree.com">
                   <Button
-                    variant="outline"
                     size="lg"
-                    className="border-border hover:bg-muted/50 px-8 py-6 text-lg"
+                    className="bg-gradient-primary hover:opacity-90 text-primary-foreground font-semibold px-8 py-6 text-lg shadow-glow"
                   >
-                    Contact Us
+                    Get Started Today
+                    <ArrowRight className="ml-2 w-5 h-5" />
                   </Button>
                 </a>
               </div>
@@ -59,7 +52,7 @@ const Footer = () => {
                 <img
                   src="/logo.png"
                   alt="H+AI logo"
-                  className="h-10 w-auto object-contain"
+                  className="h-12 md:h-14 w-auto object-contain"
                 />
               </a>
 

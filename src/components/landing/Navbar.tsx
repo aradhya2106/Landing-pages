@@ -41,7 +41,7 @@ const Navbar = () => {
               <img
                 src="/logo.png"
                 alt="H+AI logo"
-                className="h-10 w-auto object-contain"
+                className="h-12 md:h-14 w-auto object-contain"
               />
             </a>
 
@@ -58,19 +58,16 @@ const Navbar = () => {
               ))}
             </div>
 
-            {/* CTA Buttons */}
+            {/* CTA Button */}
             <div className="hidden lg:flex items-center gap-3">
               <a href="mailto:Team@yachthree.com">
-                <Button variant="ghost" size="sm">
-                  Contact Us
+                <Button
+                  size="sm"
+                  className="bg-gradient-primary hover:opacity-90 text-primary-foreground"
+                >
+                  Get Started Today
                 </Button>
               </a>
-              <Button
-                size="sm"
-                className="bg-gradient-primary hover:opacity-90 text-primary-foreground"
-              >
-                Get Started Today
-              </Button>
             </div>
 
             {/* Mobile Menu Button */}
@@ -116,16 +113,13 @@ const Navbar = () => {
                     className="w-full"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
-                    <Button variant="outline" size="lg" className="w-full">
-                      Contact Us
+                    <Button
+                      size="lg"
+                      className="w-full bg-gradient-primary hover:opacity-90 text-primary-foreground"
+                    >
+                      Get Started Today
                     </Button>
                   </a>
-                  <Button
-                    size="lg"
-                    className="w-full bg-gradient-primary hover:opacity-90 text-primary-foreground"
-                  >
-                    Get Started Today
-                  </Button>
                 </div>
               </div>
             </div>
