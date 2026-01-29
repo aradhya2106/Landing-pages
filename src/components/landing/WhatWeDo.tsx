@@ -70,7 +70,7 @@ const itemVariants = {
 
 const WhatWeDo = () => {
   return (
-    <section id="what-we-do" className="py-24 md:py-32 relative">
+    <section id="what-we-do" className="pt-24 pb-16 md:py-32 relative">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/20 to-transparent" />
       
@@ -80,7 +80,7 @@ const WhatWeDo = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
           <span className="text-primary font-medium tracking-wider uppercase text-sm mb-4 block">
             What We Do

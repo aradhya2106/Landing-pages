@@ -10,7 +10,7 @@ const datasets = [
 
 const DatasetSection = () => {
   return (
-    <section className="py-24 md:py-32 relative overflow-hidden">
+    <section className="pt-24 pb-16 md:py-32 relative overflow-hidden">
       {/* Background */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       <div className="absolute -bottom-40 right-0 w-80 h-80 bg-secondary/5 rounded-full blur-[100px]" />
@@ -24,7 +24,7 @@ const DatasetSection = () => {
           className="max-w-4xl mx-auto"
         >
           {/* Header */}
-          <div className="text-center mb-16">
+          <div className="text-center mb-12 md:mb-16">
             <span className="text-primary font-medium tracking-wider uppercase text-sm mb-4 block">
               Past Dataset Experience
             </span>

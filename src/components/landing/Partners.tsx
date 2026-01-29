@@ -11,7 +11,7 @@ const partners = [
 
 const Partners = () => {
   return (
-    <section id="partners" className="py-24 md:py-32 relative">
+    <section id="partners" className="pt-24 pb-16 md:py-32 relative">
       {/* Top Border */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 

@@ -13,11 +13,12 @@ const teamFrom = [
   "World Bank",
   "EY",
   "Goldman Sachs",
+  "Mercor",
 ];
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20 pb-16">
+    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-32 md:pt-40 pb-12 md:pb-16">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-glow opacity-50" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]" />
@@ -45,11 +46,11 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 mt-8 md:mt-12"
           >
             <Sparkles className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-muted-foreground">
-              The SuperIntelligence Labs
+            <span className="text-sm font-medium text-muted-foreground tracking-wide">
+              The <span className="mx-0.5">SuperIntelligence</span> Labs
             </span>
           </motion.div>
 
@@ -113,7 +114,7 @@ const Hero = () => {
             className="mt-10 md:mt-12"
           >
             <span className="text-muted-foreground text-sm mb-5 block">
-              Team with Experts from
+              AI Team since 2019 with Experts from
             </span>
             <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 md:gap-5">
               {teamFrom.map((org, index) => (

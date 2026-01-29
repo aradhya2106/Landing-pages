@@ -8,7 +8,7 @@ const Footer = () => {
     <>
       <footer className="relative">
         {/* CTA Section */}
-        <section className="py-24 md:py-32 relative overflow-hidden">
+        <section className="pt-24 pb-16 md:py-32 relative overflow-hidden">
           {/* Background */}
           <div className="absolute inset-0 bg-gradient-to-b from-transparent to-muted/30" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[400px] bg-primary/10 rounded-full blur-[150px]" />
@@ -52,7 +52,7 @@ const Footer = () => {
                 <img
                   src="/logo.png"
                   alt="H+AI logo"
-                  className="h-12 md:h-14 w-auto object-contain"
+                  className="h-16 md:h-20 w-auto object-contain"
                 />
               </a>
 

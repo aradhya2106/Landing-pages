@@ -46,7 +46,7 @@ const itemVariants = {
 
 const ResearchSection = () => {
   return (
-    <section id="research" className="py-24 md:py-32 relative overflow-hidden">
+    <section id="research" className="pt-24 pb-16 md:py-32 relative overflow-hidden">
       {/* Background */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       <div className="absolute -top-40 right-0 w-80 h-80 bg-accent/5 rounded-full blur-[100px]" />
@@ -58,7 +58,7 @@ const ResearchSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-12 md:mb-16"
         >
           <span className="text-primary font-medium tracking-wider uppercase text-sm mb-4 block">
             Research & Innovation
