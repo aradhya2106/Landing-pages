@@ -10,7 +10,7 @@ const datasets = [
 
 const DatasetSection = () => {
   return (
-    <section className="pt-24 pb-16 md:py-32 relative overflow-hidden">
+    <section className="pt-16 pb-12 md:py-32 relative overflow-hidden">
       {/* Background */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       <div className="absolute -bottom-40 right-0 w-80 h-80 bg-secondary/5 rounded-full blur-[100px]" />
@@ -24,7 +24,7 @@ const DatasetSection = () => {
           className="max-w-4xl mx-auto"
         >
           {/* Header */}
-          <div className="text-center mb-12 md:mb-16">
+          <div className="text-center mb-8 md:mb-16">
             <span className="text-primary font-medium tracking-wider uppercase text-sm mb-4 block">
               Past Dataset Experience
             </span>
@@ -41,8 +41,8 @@ const DatasetSection = () => {
             transition={{ duration: 0.6 }}
             className="group"
           >
-            <div className="glass-strong rounded-2xl p-8 md:p-12 transition-all duration-500 hover:border-primary/30 hover:-translate-y-1">
-              <div className="flex items-start gap-6">
+            <div className="glass-strong rounded-2xl p-6 md:p-8 lg:p-12 transition-all duration-500 hover:border-primary/30 hover:-translate-y-1">
+              <div className="flex items-start gap-4 md:gap-6">
                 <div className="p-3 rounded-xl bg-primary/10 flex items-center justify-center shrink-0">
                   <CheckCircle2 className="w-6 h-6 text-primary" />
                 </div>

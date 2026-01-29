@@ -70,7 +70,7 @@ const itemVariants = {
 
 const WhatWeDo = () => {
   return (
-    <section id="what-we-do" className="pt-24 pb-16 md:py-32 relative">
+    <section id="what-we-do" className="pt-16 pb-12 md:py-32 relative">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/20 to-transparent" />
       
@@ -80,7 +80,7 @@ const WhatWeDo = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12 md:mb-16"
+          className="text-center mb-8 md:mb-16"
         >
           <span className="text-primary font-medium tracking-wider uppercase text-sm mb-4 block">
             What We Do
@@ -100,7 +100,7 @@ const WhatWeDo = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid md:grid-cols-2 gap-6 lg:gap-8"
+          className="grid md:grid-cols-2 gap-4 md:gap-6 lg:gap-8"
         >
           {services.map((service, index) => (
             <motion.div
@@ -108,17 +108,17 @@ const WhatWeDo = () => {
               variants={itemVariants}
               className="group relative"
             >
-              <div className="glass rounded-2xl p-8 h-full transition-all duration-500 hover:border-primary/30">
+              <div className="glass rounded-2xl p-6 md:p-8 h-full transition-all duration-500 hover:border-primary/30">
                 {/* Icon */}
-                <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${service.gradient} mb-6`}>
+                <div className={`inline-flex p-3 rounded-xl bg-gradient-to-br ${service.gradient} mb-4 md:mb-6`}>
                   <service.icon className="w-6 h-6 text-background" />
                 </div>
 
                 {/* Content */}
-                <h3 className="text-xl md:text-2xl font-bold mb-4 group-hover:text-primary transition-colors">
+                <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
+                <p className="text-muted-foreground mb-4 md:mb-6 leading-relaxed">
                   {service.description}
                 </p>
 

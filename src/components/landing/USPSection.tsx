@@ -49,7 +49,7 @@ const itemVariants = {
 
 const USPSection = () => {
   return (
-    <section className="pt-24 pb-16 md:py-32 relative">
+    <section className="pt-16 pb-12 md:py-32 relative">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/20 to-transparent" />
       <div className="absolute -bottom-40 left-1/4 w-80 h-80 bg-primary/5 rounded-full blur-[100px]" />
@@ -61,7 +61,7 @@ const USPSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12 md:mb-16"
+          className="text-center mb-8 md:mb-16"
         >
           <span className="text-primary font-medium tracking-wider uppercase text-sm mb-4 block">
             Why We're Different
@@ -77,7 +77,7 @@ const USPSection = () => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="grid lg:grid-cols-4 gap-8"
+          className="grid lg:grid-cols-4 gap-4 md:gap-8"
         >
           {usps.map((usp) => (
             <motion.div
@@ -85,7 +85,7 @@ const USPSection = () => {
               variants={itemVariants}
               className="group"
             >
-              <div className="glass-strong rounded-2xl p-8 h-full flex flex-col items-center text-center transition-all duration-500 hover:border-primary/30 hover:-translate-y-1">
+              <div className="glass-strong rounded-2xl p-6 md:p-8 h-full flex flex-col items-center text-center transition-all duration-500 hover:border-primary/30 hover:-translate-y-1">
                 {/* Icon with Glow */}
                 <div className="relative inline-flex mb-6">
                   <div className="absolute inset-0 w-20 h-20 bg-primary/20 rounded-full blur-xl group-hover:bg-primary/30 transition-colors" />

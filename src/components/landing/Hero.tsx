@@ -18,7 +18,7 @@ const teamFrom = [
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-32 md:pt-40 pb-12 md:pb-16">
+    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-24 pb-10 md:pt-40 md:pb-16">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-glow opacity-50" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]" />
@@ -46,7 +46,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-8 mt-8 md:mt-12"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6 md:mb-8 mt-6 md:mt-12"
           >
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-muted-foreground tracking-wide">
@@ -59,7 +59,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.8 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-4 md:mb-6"
           >
             Real-World <span className="text-gradient">Agentic Data</span>
             <br />& Model Evaluation
@@ -70,7 +70,7 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 leading-relaxed"
+            className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-6 md:mb-8 leading-relaxed"
           >
             We build agentic datasets, evaluation pipelines, and safety
             infrastructure that empower modern AI agents systems - from self-driving
@@ -111,12 +111,12 @@ const Hero = () => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1, duration: 0.6 }}
-            className="mt-10 md:mt-12"
+            className="mt-8 md:mt-12"
           >
-            <span className="text-muted-foreground text-sm mb-5 block">
+            <span className="text-muted-foreground text-sm mb-4 md:mb-5 block">
               AI Team since 2019 with Experts from
             </span>
-            <div className="flex flex-wrap justify-center items-center gap-3 sm:gap-4 md:gap-5">
+            <div className="flex flex-wrap justify-center items-center gap-2 sm:gap-3 md:gap-5">
               {teamFrom.map((org, index) => (
                 <motion.span
                   key={org}

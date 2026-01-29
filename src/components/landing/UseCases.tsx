@@ -27,7 +27,7 @@ const useCases = [
 
 const UseCases = () => {
   return (
-    <section id="use-cases" className="pt-24 pb-16 md:py-32 relative">
+    <section id="use-cases" className="pt-16 pb-12 md:py-32 relative">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-muted/20 via-transparent to-muted/20" />
 
@@ -37,7 +37,7 @@ const UseCases = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-12 md:mb-16"
+          className="text-center mb-8 md:mb-16"
         >
           <span className="text-secondary font-medium tracking-wider uppercase text-sm mb-4 block">
             Use Cases
@@ -56,7 +56,7 @@ const UseCases = () => {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
-          className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-4"
+          className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-3 md:gap-4"
         >
           {useCases.map((useCase, index) => (
             <motion.div
@@ -66,7 +66,7 @@ const UseCases = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1, duration: 0.4 }}
               whileHover={{ scale: 1.05, y: -5 }}
-              className="glass rounded-xl p-6 text-center cursor-pointer transition-all duration-300 hover:border-primary/30"
+              className="glass rounded-xl p-4 md:p-6 text-center cursor-pointer transition-all duration-300 hover:border-primary/30"
             >
               <useCase.icon
                 className={`w-8 h-8 mx-auto mb-4 ${useCase.color}`}

@@ -11,7 +11,7 @@ const partners = [
 
 const Partners = () => {
   return (
-    <section id="partners" className="pt-24 pb-16 md:py-32 relative">
+    <section id="partners" className="pt-16 pb-12 md:py-32 relative">
       {/* Top Border */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
 
@@ -23,10 +23,10 @@ const Partners = () => {
           transition={{ duration: 0.6 }}
           className="text-center"
         >
-          <span className="text-muted-foreground text-sm mb-8 block">
+          <span className="text-muted-foreground text-sm mb-6 md:mb-8 block">
             Trusted Partners
           </span>
-          <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+          <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 lg:gap-12">
             {partners.map((partner, index) => (
               <motion.div
                 key={partner}
