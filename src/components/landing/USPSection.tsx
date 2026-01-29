@@ -49,7 +49,7 @@ const itemVariants = {
 
 const USPSection = () => {
   return (
-    <section className="pt-16 pb-12 md:py-32 relative">
+    <section className="pt-12 pb-10 md:pt-20 md:pb-16 relative">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-muted/20 to-transparent" />
       <div className="absolute -bottom-40 left-1/4 w-80 h-80 bg-primary/5 rounded-full blur-[100px]" />

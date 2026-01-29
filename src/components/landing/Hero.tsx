@@ -18,7 +18,7 @@ const teamFrom = [
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-24 pb-10 md:pt-40 md:pb-16">
+    <section className="relative min-h-screen flex flex-col justify-center overflow-hidden pt-20 pb-10 md:pt-28 md:pb-16">
       {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-glow opacity-50" />
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]" />
@@ -46,7 +46,7 @@ const Hero = () => {
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6 md:mb-8 mt-6 md:mt-12"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6 md:mb-8 mt-2 md:mt-4"
           >
             <Sparkles className="w-4 h-4 text-primary" />
             <span className="text-sm font-medium text-muted-foreground tracking-wide">

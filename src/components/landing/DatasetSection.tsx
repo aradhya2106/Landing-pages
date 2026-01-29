@@ -10,7 +10,7 @@ const datasets = [
 
 const DatasetSection = () => {
   return (
-    <section className="pt-16 pb-12 md:py-32 relative overflow-hidden">
+    <section className="pt-12 pb-10 md:pt-20 md:pb-16 relative overflow-hidden">
       {/* Background */}
       <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-border to-transparent" />
       <div className="absolute -bottom-40 right-0 w-80 h-80 bg-secondary/5 rounded-full blur-[100px]" />
